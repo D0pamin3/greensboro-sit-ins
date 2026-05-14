@@ -179,7 +179,7 @@ export default function App() {
           <section className="exhibit-room h-screen w-full flex items-center justify-center absolute inset-0 transform-style-3d bg-white overflow-hidden" data-title="Lobby">
             <div className="absolute inset-0 z-0">
               <img 
-                src="gboro2.jpg" 
+                src={`${import.meta.env.BASE_URL}gboro2.jpg`}
                 className="w-full h-full object-cover opacity-35 grayscale contrast-125 scale-105" 
                 alt="Greensboro Archive Background"
               />
@@ -219,7 +219,7 @@ export default function App() {
               <div className="fade-up relative space-y-4">
                 <div className="aspect-[4/5] bg-neutral-100 border border-black/5 relative overflow-hidden grayscale shadow-2xl">
                   <img 
-                    src="Emmet_till.jpg" 
+                    src={`${import.meta.env.BASE_URL}Emmet_till.jpg`}
                     alt="The Chicago Defender"
                     className="w-full h-full object-cover brightness-110 contrast-125 transition-transform duration-700 hover:scale-105"
                     referrerPolicy="no-referrer"
@@ -227,7 +227,7 @@ export default function App() {
                 </div>
                 <div className="aspect-[4/5] bg-neutral-100 border border-black/10 relative overflow-hidden grayscale shadow-2xl translate-x-12 -translate-y-8 z-10">
                   <img 
-                    src="jim-crow-must-go-350_orig.gif" 
+                    src={`${import.meta.env.BASE_URL}jim-crow-must-go-350_orig.gif`}
                     alt="Protest sign"
                     className="w-full h-full object-contain p-6"
                     referrerPolicy="no-referrer"
@@ -290,7 +290,7 @@ export default function App() {
               <div className="fade-up">
                 <div className="aspect-[16/10] bg-neutral-100 border border-black/10 p-4 flex items-center justify-center shadow-2xl relative overflow-hidden">
                   <img 
-                    src="131_gbo_sitin_jpg.jpg" 
+                    src={`${import.meta.env.BASE_URL}131_gbo_sitin_jpg.jpg`}
                     alt="Greensboro Sit-in Archive"
                     className="w-full h-full object-contain grayscale scale-110"
                     referrerPolicy="no-referrer"
@@ -336,7 +336,7 @@ export default function App() {
                 <div className="fade-up px-8">
                   <div className="aspect-[4/5] bg-neutral-100 border border-black/5 relative overflow-hidden flex items-center justify-center p-4 shadow-2xl skew-y-1">
                     <img 
-                      src="the-greensboro-four-walking-540.jpg" 
+                      src={`${import.meta.env.BASE_URL}the-greensboro-four-walking-540.jpg`} 
                       alt="The Greensboro Four walking to Woolworth"
                       className="w-full h-full object-contain grayscale"
                       referrerPolicy="no-referrer"
@@ -374,7 +374,7 @@ export default function App() {
               <div className="space-y-8 fade-up">
                 <div className="aspect-video bg-neutral-100 border border-black/10 p-2 relative overflow-hidden shadow-xl grayscale">
                   <img 
-                    src="8522_a5f0b33ed703d9f-1980x1294.jpg" 
+                    src={`${import.meta.env.BASE_URL}8522_a5f0b33ed703d9f-1980x1294.jpg`} 
                     alt="Collective Action and Protests"
                     className="w-full h-full object-contain"
                     referrerPolicy="no-referrer"
@@ -434,7 +434,7 @@ export default function App() {
               </div>
               <div className="relative fade-up h-[400px] bg-neutral-100 border border-black/10 flex flex-col items-center justify-center text-center p-2 overflow-hidden grayscale">
                    <img 
-                     src="sit-in-e1570204225795-1280x640-1.jpg" 
+                     src={`${import.meta.env.BASE_URL}sit-in-e1570204225795-1280x640-1.jpg`} 
                      alt="Woolworth Lunch Counter desegregation"
                      className="w-full h-full object-contain"
                      referrerPolicy="no-referrer"
@@ -471,7 +471,7 @@ export default function App() {
               <div className="fade-up">
                  <div className="aspect-[3/4] bg-neutral-100 border border-black/10 p-6 relative overflow-hidden grayscale shadow-2xl">
                     <img 
-                      src="p2_12_4-rl.jpg" 
+                      src={`${import.meta.env.BASE_URL}p2_12_4-rl.jpg`} 
                       alt="The Greensboro Four Statue at NC A&T"
                       className="w-full h-full object-contain scale-110"
                       referrerPolicy="no-referrer"
