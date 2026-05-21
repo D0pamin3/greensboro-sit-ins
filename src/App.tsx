@@ -39,11 +39,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    // Stop audio when scrolling between rooms might be jarring, 
-    // but the user might want it to continue. 
-    // Usually narration should stop if you leave the room.
-    // I'll leave it playing for now unless requested.
-    // 1. Initialize Lenis Smooth Scroll
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -179,7 +174,7 @@ export default function App() {
           <section className="exhibit-room h-screen w-full flex items-center justify-center absolute inset-0 transform-style-3d bg-white overflow-hidden" data-title="Lobby">
             <div className="absolute inset-0 z-0">
               <img 
-                src={`${import.meta.env.BASE_URL}gboro2.jpg`}
+                src="./gboro2.jpg"
                 className="w-full h-full object-cover opacity-35 grayscale contrast-125 scale-105" 
                 alt="Greensboro Archive Background"
               />
@@ -200,7 +195,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording.m4a')}
+              onClick={() => toggleAudio('./New Recording.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -219,7 +214,7 @@ export default function App() {
               <div className="fade-up relative space-y-4">
                 <div className="aspect-[4/5] bg-neutral-100 border border-black/5 relative overflow-hidden grayscale shadow-2xl">
                   <img 
-                    src={`${import.meta.env.BASE_URL}Emmet_till.jpg`}
+                    src="./Emmet_till.jpg"
                     alt="The Chicago Defender"
                     className="w-full h-full object-cover brightness-110 contrast-125 transition-transform duration-700 hover:scale-105"
                     referrerPolicy="no-referrer"
@@ -227,7 +222,7 @@ export default function App() {
                 </div>
                 <div className="aspect-[4/5] bg-neutral-100 border border-black/10 relative overflow-hidden grayscale shadow-2xl translate-x-12 -translate-y-8 z-10">
                   <img 
-                    src={`${import.meta.env.BASE_URL}jim-crow-must-go-350_orig.gif`}
+                    src="./jim-crow-must-go-350_orig.gif"
                     alt="Protest sign"
                     className="w-full h-full object-contain p-6"
                     referrerPolicy="no-referrer"
@@ -259,7 +254,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording 2.m4a')}
+              onClick={() => toggleAudio('./New Recording 2.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording 2.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -290,7 +285,7 @@ export default function App() {
               <div className="fade-up">
                 <div className="aspect-[16/10] bg-neutral-100 border border-black/10 p-4 flex items-center justify-center shadow-2xl relative overflow-hidden">
                   <img 
-                    src={`${import.meta.env.BASE_URL}131_gbo_sitin_jpg.jpg`}
+                    src="./131_gbo_sitin_jpg.jpg"
                     alt="Greensboro Sit-in Archive"
                     className="w-full h-full object-contain grayscale scale-110"
                     referrerPolicy="no-referrer"
@@ -301,7 +296,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording 3.m4a')}
+              onClick={() => toggleAudio('./New Recording 3.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording 3.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -336,7 +331,7 @@ export default function App() {
                 <div className="fade-up px-8">
                   <div className="aspect-[4/5] bg-neutral-100 border border-black/5 relative overflow-hidden flex items-center justify-center p-4 shadow-2xl skew-y-1">
                     <img 
-                      src={`${import.meta.env.BASE_URL}the-greensboro-four-walking-540.jpg`} 
+                      src="./the-greensboro-four-walking-540.jpg"
                       alt="The Greensboro Four walking to Woolworth"
                       className="w-full h-full object-contain grayscale"
                       referrerPolicy="no-referrer"
@@ -346,7 +341,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording 4.m4a')}
+              onClick={() => toggleAudio('./New Recording 4.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording 4.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -374,7 +369,7 @@ export default function App() {
               <div className="space-y-8 fade-up">
                 <div className="aspect-video bg-neutral-100 border border-black/10 p-2 relative overflow-hidden shadow-xl grayscale">
                   <img 
-                    src={`${import.meta.env.BASE_URL}8522_a5f0b33ed703d9f-1980x1294.jpg`} 
+                    src="./8522_a5f0b33ed703d9f-1980x1294.jpg"
                     alt="Collective Action and Protests"
                     className="w-full h-full object-contain"
                     referrerPolicy="no-referrer"
@@ -407,7 +402,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording 5.m4a')}
+              onClick={() => toggleAudio('./New Recording 5.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording 5.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -434,7 +429,7 @@ export default function App() {
               </div>
               <div className="relative fade-up h-[400px] bg-neutral-100 border border-black/10 flex flex-col items-center justify-center text-center p-2 overflow-hidden grayscale">
                    <img 
-                     src={`${import.meta.env.BASE_URL}sit-in-e1570204225795-1280x640-1.jpg`} 
+                     src="./sit-in-e1570204225795-1280x640-1.jpg"
                      alt="Woolworth Lunch Counter desegregation"
                      className="w-full h-full object-contain"
                      referrerPolicy="no-referrer"
@@ -443,7 +438,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('New Recording 6.m4a')}
+              onClick={() => toggleAudio('./New Recording 6.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === 'New Recording 6.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -471,7 +466,7 @@ export default function App() {
               <div className="fade-up">
                  <div className="aspect-[3/4] bg-neutral-100 border border-black/10 p-6 relative overflow-hidden grayscale shadow-2xl">
                     <img 
-                      src={`${import.meta.env.BASE_URL}p2_12_4-rl.jpg`} 
+                      src="./p2_12_4-rl.jpg"
                       alt="The Greensboro Four Statue at NC A&T"
                       className="w-full h-full object-contain scale-110"
                       referrerPolicy="no-referrer"
@@ -481,7 +476,7 @@ export default function App() {
               </div>
             </div>
             <button 
-              onClick={() => toggleAudio('25E084FA-FBEF-443C-825B-5A00479E730C.m4a')}
+              onClick={() => toggleAudio('./25E084FA-FBEF-443C-825B-5A00479E730C.m4a')}
               className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
               aria-label={playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'Pause narration' : 'Play narration'}
             >
@@ -500,17 +495,17 @@ export default function App() {
               <h2 className="text-4xl font-serif italic mb-8 fade-up">Works Cited</h2>
               <div className="space-y-4 text-[11px] font-serif fade-up opacity-80 leading-relaxed max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar">
                 <p className="pl-8 -indent-8">
-                  "Greensboro Sit-in." History.com, A&E Television Networks, 1 Feb. 2010, www.history.com/topics/black-history/the-greensboro-sit-in.
+                  "Greensboro Sit-in." History.com, A&E Television Networks, 1 Feb. 2010, www.history.com/topics/black-history/the-greensboro-sit-in
                 </p>
                 <p className="pl-8 -indent-8">
-                  International Civil Rights Center & Museum. Greensboro, NC, 2024, www.sitinmovement.org.
+                  International Civil Rights Center & Museum. Greensboro, NC, 2024, www.sitinmovement.org
                 </p>
                 <p className="pl-8 -indent-8">
-                  "The Greensboro Four." National Museum of American History, Smithsonian Institution, americanhistory.si.edu/exhibitions/greensboro-four.
+                  "Greensboro Lunch Counter." National Museum of American History, Smithsonian Institution, americanhistory.si.edu/explore/exhibitions/greensboro-lunch-counter
                 </p>
                 <p className="pl-8 -indent-8">
-                  "Student Nonviolent Coordinating Committee." Library of Congress, www.loc.gov/exhibits/civil-rights-act/student-nonviolent-coordinating-committee.html.
-                </p>
+                  McEvoy, Colin. “How the Greensboro Four Sat down and Changed the World.” Biography, 5 Sept. 2025, www.biography.com/activists/a65996650/civil-rights-greensboro-four-history
+‌                </p>
                 <p className="pl-8 -indent-8">
                    Wolff, Miles. Lunch at the 5 & 10. Ivan R. Dee, 1970.
                 </p>
