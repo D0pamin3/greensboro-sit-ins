@@ -319,8 +319,7 @@ export default function App() {
                     Ezell Blair Jr. David Richmond. Franklin McCain. Joseph McNeil. These students led a new era.
                   </p>
                   <p className="text-black font-light leading-relaxed opacity-80">
-                    They studied non-violence. They faced hostility with poise. Poise proved youth leads change. Direct action forced social shifts. You witness their courage.
-                  </p>
+                    On February 1 1960 four Black college students staged a peaceful protest at a segregated Woolworth lunch counter in Greensboro North Carolina. Ezell Blair Jr. Franklin McCain Joseph McNeil and David Richmond sat down and requested service. The store manager refused them. The students remained seated until the store closed. This nonviolent action sparked a student movement that spread to fifty five cities across the South. Their protest forced Woolworth to desegregate five months later.                  </p>
                   <div className="pt-8 border-t border-black/10 flex justify-between items-end">
                     <div>
                       <h4 className="text-xl font-serif font-bold text-black italic">Greensboro Four</h4>
@@ -424,7 +423,7 @@ export default function App() {
                   <p className="text-lg leading-relaxed text-black italic">Woolworth's desegregated the counters on July 25, 1960. Black employees ate lunch at the workplace.</p>
                 </div>
                 <p className="text-black font-light leading-relaxed">
-                  Victory inspired the formation of the Student Nonviolent Coordinating Committee. Protests triggered the Civil Rights Act of 1964. Non-violent resistance works. You see the results in this museum.
+                  this victory inspired the formation of the Student Nonviolent Coordinating Committee, a committe that fought for civil rights during the peak of the movement and even Martin Luther King was apart of it. these protests ended up triggering the Civil Rights Act of 1964. Non-violent resistance works. You see the results in this museum.
                 </p>
               </div>
               <div className="relative fade-up h-[400px] bg-neutral-100 border border-black/10 flex flex-col items-center justify-center text-center p-2 overflow-hidden grayscale">
@@ -452,42 +451,58 @@ export default function App() {
           </section>
 
           {/* SLIDE 7: REFLECTION */}
-          <section className="exhibit-room h-screen w-full flex items-center justify-center absolute inset-0 transform-style-3d bg-white" data-title="Reflection">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl px-12 items-center text-black">
-              <div className="text-center md:text-left fade-up">
-                <h2 className="text-6xl md:text-8xl font-serif italic mb-8 text-black">Legacy</h2>
-                <p className="text-xl md:text-2xl font-light leading-relaxed opacity-70 mb-8 text-black">
-                  History lives in your voice.
-                </p>
-                <p className="text-lg font-light leading-relaxed opacity-60 text-black">
-                  The Greensboro Four started a movement. They sat down when ordered to stand. This bravery demanded equality. Your actions matter.
-                </p>
-              </div>
-              <div className="fade-up">
-                 <div className="aspect-[3/4] bg-neutral-100 border border-black/10 p-6 relative overflow-hidden grayscale shadow-2xl">
-                    <img 
-                      src="./p2_12_4-rl.jpg"
-                      alt="The Greensboro Four Statue at NC A&T"
-                      className="w-full h-full object-contain scale-110"
-                      referrerPolicy="no-referrer"
-                    />
-                 </div>
-                 <p className="mt-6 text-[10px] uppercase tracking-[0.3em] opacity-40 text-center">Monument at NC A&T.</p>
-              </div>
-            </div>
-            <button 
-              onClick={() => toggleAudio('./25E084FA-FBEF-443C-825B-5A00479E730C.m4a')}
-              className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
-              aria-label={playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'Pause narration' : 'Play narration'}
-            >
-              <div className={`w-10 h-10 rounded-full border border-black/10 flex items-center justify-center transition-all duration-300 ${playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'bg-black text-white animate-pulse' : 'group-hover:bg-black group-hover:text-white'}`}>
-                {playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? <Pause className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-              </div>
-              <span className="text-[10px] uppercase tracking-widest font-bold opacity-0 group-hover:opacity-100 transition-opacity">
-                {playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'Playing' : 'Narration'}
-              </span>
-            </button>
-          </section>
+<section className="exhibit-room h-screen w-full flex items-center justify-center absolute inset-0 transform-style-3d bg-white" data-title="Reflection">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl px-12 items-center text-black">
+    
+    <div className="text-center md:text-left fade-up">
+      <h2 className="text-6xl md:text-8xl font-serif italic mb-8 text-black">
+        Legacy
+      </h2>
+
+      <p className="text-xl md:text-2xl font-light leading-relaxed opacity-70 mb-8 text-black">
+        The lasting legacy of the four
+      </p>
+
+      <p className="text-lg font-light leading-relaxed opacity-60 text-black">
+        The Greensboro sit ins started a movement across the country. It inspired a pivotal shift in the fight for civil rights. Their courage altered the Woolworth lunch counter and even the surrounding areas to incorporate African Americans into societal norms.
+      </p>
+    </div>
+
+    <div className="fade-up">
+      <div className="aspect-[3/4] bg-neutral-100 border border-black/10 p-6 relative overflow-hidden grayscale shadow-2xl">
+        <img 
+          src="./p2_12_4-rl.jpg"
+          alt="The Greensboro Four Statue at NC A&T"
+          className="w-full h-full object-contain scale-110"
+          referrerPolicy="no-referrer"
+        />
+      </div>
+
+      <p className="mt-6 text-[10px] uppercase tracking-[0.3em] opacity-40 text-center">
+        Monument at NC A&T.
+      </p>
+    </div>
+
+  </div>
+
+  <button 
+    onClick={() => toggleAudio('./25E084FA-FBEF-443C-825B-5A00479E730C.m4a')}
+    className="absolute top-8 right-8 z-[110] flex items-center gap-2 group pointer-events-auto fade-up"
+    aria-label={playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'Pause narration' : 'Play narration'}
+  >
+    <div className={`w-10 h-10 rounded-full border border-black/10 flex items-center justify-center transition-all duration-300 ${playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'bg-black text-white animate-pulse' : 'group-hover:bg-black group-hover:text-white'}`}>
+      {playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? (
+        <Pause className="w-4 h-4" />
+      ) : (
+        <Volume2 className="w-4 h-4" />
+      )}
+    </div>
+
+    <span className="text-[10px] uppercase tracking-widest font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+      {playingAudio === '25E084FA-FBEF-443C-825B-5A00479E730C.m4a' ? 'Playing' : 'Narration'}
+    </span>
+  </button>
+</section>
 
           {/* SLIDE 8: CITATIONS */}
           <section className="exhibit-room h-screen w-full flex items-center justify-center absolute inset-0 transform-style-3d bg-white" data-title="Citations">
